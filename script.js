@@ -53,3 +53,26 @@
       });
   });
 })(document);
+
+/* ********** Tyiping effect ********** */
+const $text = document.querySelector(".hero-pretitle-name");
+let str = $text.innerHTML;
+let i = 0;
+
+$text.innerHTML = "";
+
+function typing() {
+  if (i < str.length) {
+    $text.innerHTML += str.charAt(i);
+    i++;
+    setTimeout(typing, 200);
+  } else {
+    setTimeout(() => {
+      $text.innerHTML = "";
+      i = 0;
+      setTimeout(typing, 200);
+    }, 2000);
+  }
+}
+
+setTimeout(typing, 1500);

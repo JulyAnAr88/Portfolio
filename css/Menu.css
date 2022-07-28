@@ -27,6 +27,7 @@
   .menu-container{
     background-color: var(--second-color);
     box-shadow: 0 0 10px var(--letter-shadow);
+    margin: 0;
   }
   
   .menu.is-active {
@@ -50,13 +51,12 @@
 
   
 .logo a {
-    color: var(--first-color);
     font-weight: bold;
-    font-size: 1.5rem;
     text-decoration: none;
+    font-size: 1.5rem;
   }
   
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1024px) {
     .menu-btn {
       display: none;
     }

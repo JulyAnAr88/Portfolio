@@ -194,30 +194,6 @@ img.btn-whatsapp:hover{
   }
 }
 
-/* ********** HeroImage ********** */
-.hero-image {
-  background-image: var(--hero-image);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: var(--hero-attachment);
-}
-
-.hero-image-opacity {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: var(--hero-opacity-color);
-}
-
-.hero-image-title {
-  font-size: 7.5vw;
-  color: var(--hero-text-color);
-}
-
 /* ********** Modal ********** */
 .modal {
   position: fixed;
@@ -516,80 +492,4 @@ progress::-moz-progress-bar {
   height: 1.5rem;
 }
 
-@media screen and (min-width: 768px) {
-  .contact-cards {
-    display: grid;
-    grid-template-columns: repeat(2, 48%);
-    justify-content: space-between;
-  }
 
-  .portfolio > .container {
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-  }
-
-  .portfolio .section-title {
-    grid-column: span 2;
-  }
-
-  .portfolio-modal {
-    max-width: 800px;
-    flex-direction: row;
-  }
-
-  .portfolio-info {
-    margin-left: 1rem;
-    align-self: center;
-  }
-
-  .services > .container {
-    display: grid;
-    grid-template-columns: repeat(2, 45%);
-    justify-content: space-between;
-    align-content: center;
-  }
-
-  .services .section-title {
-    grid-column: span 2;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .about {
-    display: grid;
-    grid-template-columns: repeat(3, 30%);
-    justify-content: space-between;
-    align-content: center;
-  }
-
-  .contact-cards {
-    grid-template-columns: repeat(4, 24%);
-  }
-
-  .footer {
-    margin-bottom: 0;
-  }
-
-  .header {
-    position: sticky;
-    top: 0;
-    padding: 0.5rem;
-    height: calc(var(--header-height) - 0.5rem);
-  }
-
-  .portfolio > .container {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .portfolio .section-title {
-    grid-column: span 3;
-  }
-
-  .services > .container {
-    grid-template-columns: repeat(3, 30%);
-  }
-
-  .services .section-title {
-    grid-column: span 3;
-  }
-}

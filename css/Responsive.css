@@ -1,0 +1,124 @@
+@media screen and (max-width: 425px) {
+    h1 {
+        margin: 0;
+        font-size: 1.5rem;
+      }
+      
+      h2 {
+        margin: 0;
+        font-size: 1.25rem;
+      }
+      
+      h3 {
+        margin: 0;
+        font-size: 1rem;
+      }
+      
+      h4 {
+        margin: 0;
+        font-size: 0.85rem;
+      }
+      
+      h5 {
+        margin: 0;
+        font-size: 0.7rem;
+      }
+      
+      h6 {
+        margin: 0;
+        font-size: 0.65rem;
+      }
+    .contact-cards {
+      display: grid;
+      grid-template-columns: repeat(2, 48%);
+      justify-content: space-between;
+    }
+  
+    .portfolio > .container {
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+    }
+  
+    .portfolio .section-title {
+      grid-column: span 2;
+    }
+  
+    .portfolio-modal {
+      max-width: 800px;
+      flex-direction: row;
+    }
+  
+    .portfolio-info {
+      margin-left: 1rem;
+      align-self: center;
+    }
+  
+    .services > .container {
+      display: grid;
+      grid-template-columns: repeat(2, 45%);
+      justify-content: space-between;
+      align-content: center;
+    }
+  
+    .services .section-title {
+      grid-column: span 2;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+   
+    .about {
+      display: grid;
+      grid-template-columns: repeat(3, 30%);
+      justify-content: space-between;
+      align-content: center;
+    }
+  
+    .contact-cards {
+      grid-template-columns: repeat(4, 24%);
+    }
+  
+    .footer {
+      margin-bottom: 0;
+    }
+  
+    .header {
+      position: sticky;
+      top: 0;
+      padding: 0.5rem;
+      height: calc(var(--header-height) - 0.5rem);
+    }
+  
+    .portfolio > .container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .portfolio .section-title {
+      grid-column: span 3;
+    }
+  
+    .services > .container {
+      grid-template-columns: repeat(3, 30%);
+    }
+  
+    .services .section-title {
+      grid-column: span 3;
+    }
+
+    .full-lg-screen {
+        width: 100%;
+        min-height: 100vh;
+      }
+    
+      .text-lg-center {
+        text-align: center;
+      }
+    
+      .text-lg-left {
+        text-align: left;
+      }
+    
+      .text-lg-right {
+        text-align: right;
+      }
+}
