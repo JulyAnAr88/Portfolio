@@ -18,7 +18,8 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: var(--second-color);
+    text-shadow: 1px 1px 1px var(--letter-shadow);
+    background: linear-gradient(5deg, var(--first-color) 0%, var(--second-color) 100%);
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.5s ease;
@@ -60,6 +61,8 @@
     }
   
     .menu {
+      background: none;
+      text-shadow: none;
       position: static;
       width: auto;
       flex-direction: row;

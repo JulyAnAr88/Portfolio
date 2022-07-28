@@ -40,7 +40,8 @@
 }
 
 .skills-cards{
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 31.5%);
   flex-wrap: wrap;
   align-items:center;
   justify-content: center;
@@ -111,6 +112,11 @@
         padding-left: 3rem;
         width: 80%;
     }
+
+    .skills-cards{
+      display: flex;
+    }
+
     .skill-box{
         width: 6.3rem;
         height: 6.3rem;
