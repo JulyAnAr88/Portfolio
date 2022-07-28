@@ -9,15 +9,12 @@
   <!-- Referencia de la hoja de estilo de Css -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/About.css">
-  <link rel="stylesheet" href="css/Academic.css">
-  <link rel="stylesheet" href="css/Footer.css">
   <link rel="stylesheet" href="css/Contacto.css">
   <link rel="stylesheet" href="css/Home.css">
   <link rel="stylesheet" href="css/Menu.css">
   <link rel="stylesheet" href="css/Modal.css">
   <link rel="stylesheet" href="css/Portfolio.css">
   <link rel="stylesheet" href="css/Responsive.css">
-  <link rel="stylesheet" href="css/Skills.css">
     
   <title>JA | Math | Dev.</title>
   <meta name="description"
@@ -55,8 +52,7 @@
       <nav class="menu">
         <a href="#inicio">Inicio</a>
         <a href="#sobre-mi">Sobre mí</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#hobbies">Hobbits</a>
+        <a href="#hobbits">Hobbits</a>
         <a href="#portafolio">Portafolio</a>
         <a href="#formacion">Formación</a>
         <a href="#contacto">Contacto</a>
@@ -65,6 +61,21 @@
   </header>
   <!-- Sección del Title/Hero -->
   <section id="inicio" class="home">
+    <article class="modal" id="hobbits">
+      <div class="modal-content">
+        <a href="#cerrar" class="modal-close">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path
+              d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z" />
+          </svg>
+        </a>
+        <div class="portfolio__video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/uE-1RPDqJAY" 
+          title="YouTube video player" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen></iframe>
+      </div>
+    </article>
     <article class="hero-image" style="--hero-image: url('../assets/hero-image-home.jpeg'); --hero-attachment: fixed;">
       <aside class="hero-image-opacity" style="--hero-opacity-color: var(--black-alpha-color);">
         <div class="hero-image-content container">
@@ -83,7 +94,7 @@
   </section>
 
   <!-- Sección sobre mí -->
-  <section id="sobre-mi" class="about-container">
+  <section id="sobre-mi" class="about-container section">
     
     <aside class="welcome text-center text-lg-center title-shadow">
       <h1>¡Bienvenidx y gracias por visitarme!</h1>
@@ -103,11 +114,11 @@
           <br>La pandemia me devuelve al ruedo, ya con una buena base <strong>matemática</strong>: lógica, cálculo, estadística… y de programación; me encuentro con la posibilidad de incursionar en el desarrollo de videojuegos con un potente motor 3D como es <strong>Unreal Engine</strong> y un altamente versátil lenguaje para 2D como <strong>PixiJS</strong>. (Ver más en <a href="#portafolio">Portafolio</a>)</p>
           </article>
           <article class="text-lg-justify"> 
-            <p>El <strong>desarrollo web</strong> se me presentó como una materia pendiente y hoy estoy formando parte de una muy completa experiencia de la mano de Alura y Oracle, desde donde puedo ofrecerte soluciones a tus necesidades, por ahora desde el <strong>Front End</strong>, pero próximamente, una respuesta Full Stack.
+            <p>El <strong>desarrollo web</strong> era una materia pendiente y hoy estoy formando parte de una muy completa experiencia de la mano de Alura y Oracle, desde donde puedo ofrecerte soluciones a tus necesidades, por ahora desde el <strong>Front End</strong>, pero próximamente, una respuesta Full Stack.
             <br>Y como cuando dije que me apasionaban los desafíos, no mentía, no podía evitar adentrarme en el trabajo con <strong>datos</strong>, ¿cómo evitar la práctica que amalgama las áreas de conocimientos que ordenan y rigen mis deseos más básicos, esas que satisfacen mi sed de conocimiento y motivan a continuar creciendo…?
             <br>Si llegaste hasta acá, no te queda otra opción que continuar scrolleando y ver una muy, muy pequeña muestra de lo que te estaba hablando.</p>
           <p>Gracias por leerme, espero podamos trabajar juntxs.</p>
-          <br><br><br>
+          <br><br><br><br>
           <div class="text-center text-lg-center">
             <a class="btn" href="https://bit.ly/3b446G4" target="_blank" rel="noopener">DESCARGA MI CV <i class="fa-solid fa-download"></i></a>
           </div>
@@ -383,6 +394,8 @@
            <aside class="portfolio-details">
               <small><b>CURSO:</b></small>
               <small>Capacitación en oficios de la economía del conocimiento: Desarrollo de Videojuegos</small>
+              <small><b></b></small>
+              <small><b></b></small>
               <small><b>FECHA:</b></small>
               <small>2022</small>
               <small><b>REPOSITORIO:</b></small>
@@ -588,7 +601,7 @@
               d="M18.5 7.3125L7 16.8125V27C7 27.5625 7.4375 28 8 28H15C15.5 28 15.9375 27.5625 15.9375 27V21C15.9375 20.5 16.4375 20 16.9375 20H20.9375C21.5 20 21.9375 20.5 21.9375 21V27C21.9375 27.5625 22.4375 28 22.9375 28H30C30.5 28 31 27.5625 31 27V16.75L19.4375 7.3125C19.3125 7.1875 19.125 7.125 19 7.125C18.8125 7.125 18.625 7.1875 18.5 7.3125ZM36.6875 13.75L31.5 9.4375V0.8125C31.5 0.375 31.125 0.0625 30.75 0.0625H27.25C26.8125 0.0625 26.5 0.375 26.5 0.8125V5.3125L20.875 0.6875C20.375 0.3125 19.6875 0.0625 19 0.0625C18.25 0.0625 17.5625 0.3125 17.0625 0.6875L1.25 13.75C1.0625 13.875 0.9375 14.125 0.9375 14.3125C0.9375 14.5 1.0625 14.6875 1.125 14.8125L2.75 16.75C2.875 16.9375 3.0625 17 3.3125 17C3.5 17 3.6875 16.9375 3.8125 16.8125L18.5 4.75C18.625 4.625 18.8125 4.5625 19 4.5625C19.125 4.5625 19.3125 4.625 19.4375 4.75L34.125 16.8125C34.25 16.9375 34.4375 17 34.625 17C34.875 17 35.0625 16.9375 35.1875 16.75L36.8125 14.8125C36.9375 14.6875 37 14.5 37 14.3125C37 14.125 36.875 13.875 36.6875 13.75Z"
               fill="var(--first-color)" />
           </svg>
-          <h5>UBICACIÓN</h5>
+          <h5>LOCALIZACIÓN</h5>
           <small><i>Santa Fe</i>, Santa Fe, Argentina</small>
         </aside>
         
@@ -606,7 +619,7 @@
             <path
               d="M16.018,3.815L15.232,8h-4.966l0.716-3.815L9.018,3.815L8.232,8H4v2h3.857l-0.751,4H3v2h3.731l-0.714,3.805l1.965,0.369 L8.766,16h4.966l-0.714,3.805l1.965,0.369L15.766,16H20v-2h-3.859l0.751-4H21V8h-3.733l0.716-3.815L16.018,3.815z M14.106,14H9.141 l0.751-4h4.966L14.106,14z" />
           </svg>          
-          <h5>SOCIAL MEDIA</h5>
+          <h5>REDES SOCIALES</h5>
           <small class="social-media">
             <ul class="title__network text-lg-center">
               <li class="title__network__item"><a href="https://github.com/JulyAnAr88" target="_blank"><i class="bi bi-github"></i> </a></li>
@@ -626,7 +639,7 @@
         <div class="contact-form-loader text-center none">
           <img src=" assets/loader.svg" alt="Enviando...">
         </div>
-        <input class="btn" type="submit" value="ENVIAR MENSAJE">
+        <input class="btn text-lg-center" type="submit" value="ENVIAR MENSAJE">
       </form>
       <article id="gracias" class="modal">
         <div class="modal-content">
@@ -634,7 +647,7 @@
             <h3>
               ¡Muchas Gracias!
               <br>
-              Por tus comentarios
+              Me pondré en contacto de inmediato.
             </h3>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
               <path d="M12,18c4,0,5-4,5-4H7C7,14,8,18,12,18z" />
@@ -649,7 +662,8 @@
     </div>
   </section>
   <footer class="footer">
-    <p>&copy Copyright Julián Aragón - 2022</p>
+    <p>&copy Julián Aragón - 2022</p>
+    <small>Plantilla de <a href="https://jonmircha.com" target="_blank" rel="noopener">@jonmircha</a></small>
   </footer>
   <script src="script.js"></script>
 </body>

@@ -73,6 +73,7 @@
   
     .menu a:last-child {
       padding-right: 0;
+      font-weight: 800;
     }
   
     .menu a:hover {
