@@ -34,24 +34,6 @@
       justify-content: space-between;
     }
   
-    .portfolio > .container {
-      display: grid;
-      grid-template-columns: repeat(2, 50%);
-    }
-  
-    .portfolio .section-title {
-      grid-column: span 2;
-    }
-  
-    .portfolio-modal {
-      max-width: 800px;
-      flex-direction: row;
-    }
-  
-    .portfolio-info {
-      margin-left: 1rem;
-      align-self: center;
-    }
   
     .services > .container {
       display: grid;
@@ -82,14 +64,7 @@
       height: calc(var(--header-height) - 0.5rem);
     }
   
-    .portfolio > .container {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  
-    .portfolio .section-title {
-      grid-column: span 3;
-    }
-  
+    
     .services > .container {
       grid-template-columns: repeat(3, 30%);
     }
@@ -100,7 +75,7 @@
 
     .full-lg-screen {
         width: 100%;
-        min-height: 100vh;
+        min-height: 70vh;
       }
     
       .text-lg-center {
@@ -113,5 +88,9 @@
     
       .text-lg-right {
         text-align: right;
+      }
+
+      .text-lg-justify{
+        text-align: justify;
       }
 }
