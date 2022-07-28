@@ -47,10 +47,11 @@
   
   .portfolio-modal {
     padding: 1rem;
-    max-width: 400px;
+    max-width: 300px;
     display: flex;
     flex-direction: column;
-    background-color: var(--white-color);
+    background-color: var(--main-color);
+    box-shadow: var(--white-alpha-color) 0px 8px 24px, var(--black-alpha-color) 0px 16px 56px, var(--white-alpha-color) 0px 24px 80px;
   }
   
   .portfolio-modal h3 {
@@ -70,6 +71,20 @@
     color: var(--first-color);
   }
 
+  .portfolio__video {
+    margin: 0;
+    padding: 3.7rem 0 0.5rem 0; 
+}
+  .portfolio__video iframe{
+    left:0;
+    top:0;
+    
+    max-width: 265px;
+    max-height: 130px;
+    height:100%;
+    position:relative;
+}
+
   @media screen and (min-width: 425px) {
     .portfolio > .container, .portfolio > .container-dev {
         display: grid;
@@ -80,7 +95,6 @@
       .portfolio-card-info-half {
         width: 50%;
       }
-
       
       .half img {
         height: 100%;
@@ -98,17 +112,41 @@
       .portfolio-modal {
         max-width: 800px;
         flex-direction: row;
+        background-color: var(--main-color);
+        box-shadow: var(--white-alpha-color) 0px 8px 24px, var(--black-alpha-color) 0px 16px 56px, var(--white-alpha-color) 0px 24px 80px;
       }
     
       .portfolio-info {
         margin-left: 1rem;
         align-self: center;
       }
+      .portfolio-info h3{
+        text-transform: uppercase;
+      }
+
       .half-card{
         width: 520px;
         margin: 0 auto;
         padding: 0.5rem 1rem;
       }
+
+      .portfolio__video {
+        padding: 0;
+        display: block;
+    }
+    .portfolio__video iframe{
+      
+        margin: auto;
+        max-width: 510px;
+        max-height: 325px;
+        box-shadow: 0 0 20px var(--letter-shadow);
+    }
+
+      .proyecto__video {
+        width: 80%;
+        margin: 0.5rem 0;  
+        max-width: 460px;
+    }
   }
 
   @media screen and (min-width: 1024px) {
