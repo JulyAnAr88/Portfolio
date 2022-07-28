@@ -89,7 +89,7 @@
     .portfolio > .container, .portfolio > .container-dev {
         display: grid;
         grid-template-columns: repeat(2, 50%);
-        margin: 1rem 0;
+        
       }
 
       .portfolio-card-info-half {
@@ -106,7 +106,7 @@
       }
     
       .portfolio-subtitle {
-        margin-bottom: 1rem;
+        margin: 1rem 0;
       }
     
       .portfolio-modal {

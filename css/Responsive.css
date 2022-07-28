@@ -28,31 +28,13 @@
         margin: 0;
         font-size: 0.65rem;
       }
-    .contact-cards {
-      display: grid;
-      grid-template-columns: repeat(2, 48%);
-      justify-content: space-between;
-    }
-  
-  
-    .services > .container {
-      display: grid;
-      grid-template-columns: repeat(2, 45%);
-      justify-content: space-between;
-      align-content: center;
-    }
-  
-    .services .section-title {
-      grid-column: span 2;
-    }
+   
   }
+
   
   @media screen and (min-width: 1024px) {
    
-    .contact-cards {
-      grid-template-columns: repeat(4, 24%);
-    }
-  
+     
     .footer {
       margin-bottom: 0;
     }
@@ -62,15 +44,6 @@
       top: 0;
       padding: 0.5rem;
       height: calc(var(--header-height) - 0.5rem);
-    }
-  
-    
-    .services > .container {
-      grid-template-columns: repeat(3, 30%);
-    }
-  
-    .services .section-title {
-      grid-column: span 3;
     }
 
     .full-lg-screen {
