@@ -1,0 +1,155 @@
+.welcome{
+    padding: 0.5rem;
+    margin: 0.5rem 10rem 0 10rem;
+    border-top: thin solid var(--first-color);
+  border-bottom: thin solid var(--first-color);
+}
+
+
+.about-container {
+    background-color: var(--bg-color);
+    justify-content: space-between;
+    align-content: center;
+    padding-top: 1rem;
+}
+
+.about > article {
+    margin-bottom: 1rem;
+  }
+.about-skills{
+  display: initial;
+}
+
+.text-first-color {
+    color: var(--first-color);
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-left {
+    text-align: left;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+
+  .text-justify{
+    text-align: justify;
+  }
+
+  .skill-text{
+    font-size: 13px;
+    font-size: var(--little-font);
+    text-align: center;
+    margin-top: .5rem;
+    color: var(--first-color);
+    text-transform: uppercase;
+}
+
+.skills-cards{
+  display: flex;
+  flex-wrap: wrap;
+  align-items:center;
+  justify-content: center;
+}
+
+.skill-box{
+    width: 4rem;
+    height: 4rem;
+    margin: 10px;
+    display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  border-radius: .2rem;
+}
+
+.skill-icon-added{
+    width: 3rem;
+    height: 3rem;
+}
+.skill-icon{
+  color:var(--first-color);
+  font-size: 2rem;
+}
+
+.skill-box:hover, .skill-box-added:hover{
+  transform:scale(1.2);
+  transform: rotate(-10deg);
+}
+
+.skill-box-added{
+     
+  display:flex;
+  align-items:center;
+  flex-direction:column;
+  transform: scale(0.9);
+}
+
+.content-skills{
+  padding-bottom: 0.5rem;
+}
+  
+  @media screen and (min-width: 1024px) {
+    
+    .about {
+        display: grid;
+        grid-template-columns: repeat(3, 30%);
+        justify-content: space-between;
+        align-content: center;
+    }
+    .about-skills {
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      justify-content: space-between;
+      align-content: center;
+  }
+    .about > article {
+        margin-bottom: 1.5rem;
+      }
+      
+    .about img{
+        padding-top: 4rem;
+    }
+
+    .full-lg-screen {
+      width: 100%;
+      min-height: 100vh;
+    }
+  
+    .text-lg-center {
+      text-align: center;
+    }
+  
+    .text-lg-left {
+      text-align: left;
+    }
+  
+    .text-lg-right {
+      text-align: right;
+    }
+
+    .text-lg-justify{
+        text-align: justify;
+      }
+
+    .skill-box{
+        width: 6.3rem;
+        height: 6.3rem;
+        margin:1px;
+        
+    }
+
+    .skill-box-added{
+      width: 5.9rem;
+      height: 5.9rem;    
+      display:flex;
+      align-items:center;
+      flex-direction:column;
+      transform: scale(0.9);
+  }
+    
+  }

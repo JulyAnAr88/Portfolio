@@ -14,11 +14,16 @@
   --link-color: #3958fc;
   --title-color: #8f8f8f;
   --text-color: #ffffff;
+  --letter-shadow: #747474;
   --white-alpha-color: rgba(255, 255, 255, 0.5);
   --black-alpha-color: rgba(0, 0, 0, 0.5);
+  --bg-color: #222222;
+  --bg-color-2: #313131;
   --font: "Raleway", sans-serif;
   --max-width: 1200px;
   --header-height: 4rem;
+
+  --little-font: 0.8rem;
 }
 
 /* ********** Reset ********** */
@@ -44,6 +49,7 @@ body {
 a {
   color: var(--link-color);
   transition: all 0.5s ease-out;
+  text-decoration: none;
 }
 
 a:hover {
@@ -86,7 +92,12 @@ img {
 }
 
 p {
-  line-height: 1.6;
+  line-height: 1.2;
+  font-size: 0.9rem;
+}
+
+.title-shadow{
+  text-shadow: 3px 3px 3px var(--letter-shadow);
 }
 
 img.btn-whatsapp {
@@ -310,52 +321,14 @@ progress::-moz-progress-bar {
 .section-title {
   border-top: thin solid var(--first-color);
   border-bottom: thin solid var(--first-color);
-  margin: 2rem auto;
+  margin: 0 auto;
   padding: 0.5rem 1rem;
   width: 250px;
   text-align: center;
-  color: var(--title-color);
-}
-
-.text-first-color {
-  color: var(--first-color);
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right;
-}
-
-@media screen and (min-width: 1024px) {
-  .full-lg-screen {
-    width: 100%;
-    min-height: 100vh;
-  }
-
-  .text-lg-center {
-    text-align: center;
-  }
-
-  .text-lg-left {
-    text-align: left;
-  }
-
-  .text-lg-right {
-    text-align: right;
-  }
+  color: var(--letter-color);
 }
 
 /* ********** Site Styles ********** */
-.about > article {
-  margin-bottom: 2rem;
-}
 
 .contact-card {
   margin: 1rem auto;
@@ -394,6 +367,7 @@ progress::-moz-progress-bar {
   width: 100%;
   height: var(--header-height);
   background-color: var(--second-color);
+  box-shadow: 0 0 10px var(--letter-shadow);
 }
 
 .header > .container {

@@ -26,8 +26,6 @@
 
   .menu-container{
     background-color: var(--second-color);
-    box-shadow: 0 0 10px var(--letter-shadow);
-    margin: 0;
   }
   
   .menu.is-active {
