@@ -106,7 +106,7 @@
 @media screen and (min-width: 425px){
 .contact-cards {
     display: grid;
-    grid-template-columns: repeat(2, 48%);
+    grid-template-columns: 1fr;
     justify-content: space-between;
   }
   .contact .section-title {

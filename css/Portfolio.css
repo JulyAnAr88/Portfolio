@@ -5,6 +5,10 @@
     padding-top: 1rem;
 }
 
+.portfolio-subtitle{
+  margin: 0.5rem auto;
+}
+
 .portfolio-card {
     position: relative;
     width: 100%;
@@ -85,6 +89,10 @@
     position:relative;
 }
 
+.modal-red{
+  padding: 4rem 0.7rem 0.5rem 0.7rem;
+}
+
   @media screen and (min-width: 425px) {
     .portfolio > .container, .portfolio > .container-dev {
         display: grid;
@@ -125,7 +133,7 @@
       }
 
       .half-card{
-        width: 520px;
+        width: 265px;
         margin: 0 auto;
         padding: 0.5rem 1rem;
       }
@@ -149,11 +157,22 @@
     }
   }
 
+  @media screen and (min-width: 768px) {
+    .half-card{
+      width: 415px;
+      margin: 0 auto;
+      padding: 0.5rem 1rem;
+    }
+  }
+
   @media screen and (min-width: 1024px) {
   
     .portfolio .section-title {
         grid-column: span 3;
         margin-bottom: 1rem;
+      }
+      .half-card{
+        width: 550px;
       }
     
   }

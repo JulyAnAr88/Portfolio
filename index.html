@@ -58,9 +58,7 @@
       </nav>
     </section>
   </header>
-  <!-- Sección del Title/Hero -->
-  <section id="inicio" class="home">
-    <article class="modal" id="hobbits">
+  <article class="modal" id="hobbits">
       <div class="modal-content">
         <a href="#cerrar" class="modal-close">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -74,6 +72,8 @@
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
           allowfullscreen></iframe>
       </div>
+  <!-- Sección del Title/Hero -->
+  <section id="inicio" class="home">    
     </article>
     <article class="hero-image" style="--hero-image: url('../assets/hero-image-home.jpeg'); --hero-attachment: fixed;">
       <aside class="hero-image-opacity" style="--hero-opacity-color: var(--black-alpha-color);">
@@ -103,24 +103,26 @@
         <article>
           <img class="gray-scale" src="assets/profile.png" alt="july">
         </article>
-        <article class="text-lg-justify">
+        <div class="boton-download text-center text-lg-center">
+          <a class="btn" href="https://bit.ly/3b446G4" target="_blank" rel="noopener">DESCARGA MI CV <i class="fa-solid fa-download"></i></a>
+        </div>
+        <article class="parraph-1 text-lg-justify">
           <p>Diferentes razones puede que te hayan traído hasta acá, espero puedas irte con la mejor impresión. 
             Por más que no sea muy adepto de este tipo de previews, un estilo de “tráiler” de personas, entiendo que en términos técnicos pueda resultar útil, pero ¿se puede definir a una persona en dos párrafos? ¿Cualquier intento no sería reduccionista?
             <br>Así y todo aquí va mi mejor esfuerzo.
             <br>Siempre apasionado por las historias, los desafíos y los problemas, encuentro en la informática el ámbito óptimo de desarrollo personal.
             Suspendo mi avance en este sector para formarme como educador en una de las áreas del conocimiento más importantes del desarrollo humano,  pilar fundamental de esta especialidad, y muchas otras.
           <br>Pero <i>“[se] puede cambiar de todo: de cara, de casa, de familia, de novia, de religión, ... pero hay una cosa que no [se] puede cambiar… no [se] puede cambiar de pasión”.</i>.
-          <br>La pandemia me devuelve al ruedo, ya con una buena base <strong>matemática</strong>: lógica, cálculo, estadística… y de programación; me encuentro con la posibilidad de incursionar en el desarrollo de videojuegos con un potente motor 3D como es <strong>Unreal Engine</strong> y un altamente versátil lenguaje para 2D como <strong>PixiJS</strong>. (Ver más en <a href="#portafolio">Portafolio</a>)</p>
+          </p>
           </article>
-          <article class="text-lg-justify"> 
-            <p>El <strong>desarrollo web</strong> era una materia pendiente y hoy estoy formando parte de una muy completa experiencia de la mano de Alura y Oracle, desde donde puedo ofrecerte soluciones a tus necesidades, por ahora desde el <strong>Front End</strong>, pero próximamente, una respuesta Full Stack.
+          <article class="parraph-2 text-lg-justify"> 
+            <p>La pandemia me devuelve al ruedo, ya con una buena base <strong>matemática</strong>: lógica, cálculo, estadística… y de programación; me encuentro con la posibilidad de incursionar en el desarrollo de videojuegos con un potente motor 3D como es <strong>Unreal Engine</strong> y un altamente versátil lenguaje para 2D como <strong>PixiJS</strong>. (Ver más en <a href="#portafolio">Portafolio</a>)
+          </article>
+          <article class="parraph-3 text-lg-justify"> 
+            El <strong>desarrollo web</strong> era una materia pendiente y hoy estoy formando parte de una muy completa experiencia de la mano de Alura y Oracle, desde donde puedo ofrecerte soluciones a tus necesidades, por ahora desde el <strong>Front End</strong>, pero próximamente, una respuesta Full Stack.
             <br>Y como cuando dije que me apasionaban los desafíos, no mentía, no podía evitar adentrarme en el trabajo con <strong>datos</strong>, ¿cómo evitar la práctica que amalgama las áreas de conocimientos que ordenan y rigen mis deseos más básicos, esas que satisfacen mi sed de conocimiento y motivan a continuar creciendo…?
             <br>Si llegaste hasta acá, no te queda otra opción que continuar scrolleando y ver una muy, muy pequeña muestra de lo que te estaba hablando.</p>
-          <p>Gracias por leerme, espero podamos trabajar juntxs.</p>
-          <br><br><br><br>
-          <div class="text-center text-lg-center">
-            <a class="btn" href="https://bit.ly/3b446G4" target="_blank" rel="noopener">DESCARGA MI CV <i class="fa-solid fa-download"></i></a>
-          </div>
+          <p>Gracias por leerme, espero podamos trabajar juntxs.</p>                   
         </article>
       </div>
     
@@ -575,7 +577,7 @@
           d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z" />
       </svg>
     </a>
-    <article class="portfolio-modal">
+    <article class="portfolio-modal modal-red">
       <video src="assets/videoredes.mp4" class="proyecto__video center" controls></video>
       <div class="portfolio-info">
         <h3>RedVuelta <i class="fa-solid fa-satellite-dish"></i></h3>

@@ -20,6 +20,7 @@
   .hero-image-title {
     font-size: 7.5vw;
     color: var(--hero-text-color);
+    text-shadow: 1px 1px var(--main-color),  2px 2px var(--gray-dark-color);
   }
 
   .hero-pretitle-name{
@@ -38,7 +39,7 @@
 
   .hero-post-title{
     padding-bottom: 0.5rem;
-
+    text-shadow: 1px 1px var(--main-color),  2px 2px var(--gray-dark-color);
   }
 
   @media screen and (max-width: 425px) {
