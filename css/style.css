@@ -205,6 +205,10 @@ img.btn-whatsapp:hover{
   background-color: var(--second-color);
 }
 
+.footer > small, .footer a {
+  color: var(--second-color);
+}
+
 .header {
   position: fixed;
   left: 0;
