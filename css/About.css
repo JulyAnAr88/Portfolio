@@ -159,7 +159,7 @@
     .about {
         display: grid;
         grid-template-columns: repeat(3, 31.5%);        
-        grid-template-rows: 68% 32%;;
+        grid-template-rows: 68% 32%;
         justify-content: space-between;
         align-content: center;
         height: calc(50vh - 50px);
@@ -173,7 +173,8 @@
       align-content: center;
   }
     .about > article {
-        margin-bottom: 1.5rem;
+      
+        margin-bottom: 1.4rem;
       }
       
     .about img{
@@ -197,6 +198,7 @@
     .parraph-2{  
       grid-column: 2/3;
       grid-row: 2/3;
+      margin-top: 0.35rem;
     }
     .parraph-3{  
       grid-column: 3/4;
