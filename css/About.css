@@ -6,7 +6,7 @@
 
 .about {
   display: grid;
-  grid-template-rows: 0.25fr 0.35fr 0.5fr 0.35fr 0.20fr;
+  grid-template-rows: 0.25fr 0.35fr 0.35fr 0.35fr 0.20fr;
   justify-content: space-between;
   align-content: center;
 }
@@ -159,10 +159,10 @@
     .about {
         display: grid;
         grid-template-columns: repeat(3, 31.5%);        
-        grid-template-rows: 68% 32%;
+        grid-template-rows: 65% 35%;
         justify-content: space-between;
         align-content: center;
-        height: calc(50vh - 50px);
+        height: auto;
         min-height: none;
         margin-top: 1rem;
     }
